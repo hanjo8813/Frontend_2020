@@ -34,6 +34,99 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@600&display=swap" rel="stylesheet">
 
+    <!-- 주의사항 커스텀-->
+    <style>
+        .num_div{
+            width: 100%;
+            height: 50px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .pic_div{
+            width: 100%;
+            height: 200px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        .pic_div1 {
+            background-size: cover;
+            margin-left : 5%;
+            margin-right: 5%;
+            width: 23.333%;
+            height: 100%;
+            float: left;
+        }
+        
+        .in_div{
+            width: 100%;
+            height: 100px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        .in_div1 {
+            margin-left : 2%;
+            margin-right: 2%;
+            width: 29.333%;
+            height: 100%;
+            float: left;
+            padding-top:20px;
+        }
+        .mytable{
+            width:100%;
+            text-align: center;
+            font-size:14px;
+        }
+        .myth{
+            height:80px;
+            border-bottom :1px solid #f1f1f1 ;
+            background-color: white;
+            font-weight:bolder;
+            font-size:20px;
+        }
+        .mytr{
+            color:#6e6e6eb9;
+            height:60px;
+            border-bottom :1px solid rgb(214, 214, 214) ;
+        }
+        .mytr:hover{
+            background-color: #f1f1f1;
+        }
+        .my_a {
+            color: black;
+            text-decoration: none;
+        }
+        .my_a:hover {
+            color: #FEC034;
+            font-weight: bolder;
+        }
+        .mybutton{
+            background-color: #fff;
+            width:45px; height:45px;
+            border: 1px solid rgb(214, 214, 214);
+        }
+        .mybutton:hover{
+            border: 1.5px solid black;
+        }
+        .mybutton2{
+            color:white;
+            background-color: #2E313C;
+            width:110px; height:45px;
+            position: absolute;
+            right : 200px;
+            border: 1px;
+            border-radius:3px;
+        }
+        .mybutton2:hover {
+        background-color: #FEC034;
+        font-weight: bolder;
+        }
+        body:not(.device-touch) .mybutton2 {
+        transition: background-color .2s linear;
+        -webkit-transition: background-color .2s linear;
+        -o-transition: background-color .2s linear;
+        }
+    </style>
 
 </head>
 
@@ -48,85 +141,89 @@
             <!-- 메뉴버튼-->
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav text-uppercase ml-auto">
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="info.html"
-                            style="color:#fed136;">안내 사항</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#portfolio">호텔 방 소개</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">포토 갤러리</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#team">예약 문의</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger " href="./i_info.html" style="font-size:1.1rem; font-weight:900;">안내 사항</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="./i_hotel_room.html" style="font-size:1.1rem; font-weight:900; ">호텔 방 소개</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="./i_gallery.html" style="font-size:1.1rem; font-weight:900;">포토 갤러리</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="./i_reservation.html" style="font-size:1.1rem; font-weight:900;">예약 문의</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <section class="page-section" style="padding:10rem; font-family : 'Noto Sans KR', sans-serif;">
+    <!-- 주의사항 시작-->
+    <section class="page-section bg-light" id="portfolio" style="text-align: center; padding:10rem; padding-bottom:5rem; font-family : 'Noto Sans KR', sans-serif;">
         <div class="container">
-            <div style="font-size : 30px; margin-left:2rem">돌봄원 위치</div>
-            <hr><br>
-
-            <!-- 카카오맵 API -->
-            <div style="background-color: gray; width:100%; height:400px">
-                지도들어갈 자리
+            <h2 class="section-heading" style=" font-size : 45px; ">예약 시 주의사항</h2>
+            <p class="" style="color:#99a0a7; font-size : 20px">
+                고객님들이 알아두셔야 할 주의사항입니다.
+            </p><hr><br><br><br>
+            <!-- 주의-사진-->
+            <div class="pic_div">
+                <div class="pic_div1" style="background-image: url('./assets/img/caution/cau1.png');"></div>
+                <div class="pic_div1" style="background-image: url('./assets/img/caution/cau2.jpeg');"></div>
+                <div class="pic_div1" style="background-image: url('./assets/img/caution/cau3.jpg');"></div>
             </div>
-
-            <!-- 정보들-->
-            <div style="margin:3rem; margin-left:2rem">
-                <span style="font-size : 15px;">애완견돌봄원</span><br>
-                <span style="font-size : 30px;">경기도 남양주시 진건읍 사릉로 720-135</span>
+            <!-- 주의사항 문구-->
+            <div class="in_div">
+                <div class="in_div1" style="color:#40464b; font-size : 20px">픽업서비스 예약 주의사항<br>어쩌구저쩌구</div>
+                <div class="in_div1" style="color:#40464b; font-size : 20px">반려견 관련 주의사항<br>어쩌구저쩌구</div>
+                <div class="in_div1" style="color:#40464b; font-size : 20px">입소기간 주의사항<br>어쩌구저쩌구</div>
             </div>
-            <hr>
-
-            <table style="height:80px">
-                <tr>
-                    <td style="width:200px; padding-left:2rem;"><i class="fas fa-map-marker-alt"
-                            style="float:left; color:rgb(170, 170, 170)"></i>&nbsp;&nbsp;&nbsp;오시는길</td>
-                    <td>저희 돌봄원이 산속에 위치해 있다보니 네비에 잘 안나오는 경우가 있습니다.티맵을 사용하실 경우 "애완견돌봄원"이라고 검색 하시면 됩니다. <br>
-                        다른 네비를 사용하시는분은 "신와교"라고 검색하시고 도착 하셔서 전화 주시면 됩니다.</td>
-                </tr>
-            </table>
-            <hr>
-            <table style="height:80px">
-                <tr>
-                    <td style="width:200px; padding-left:2rem;"><i class="fas fa-clock"
-                            style="color:rgb(170, 170, 170)"></i>&nbsp;&nbsp;&nbsp;운영시간</td>
-                    <td>
-                        <div>
-                            <div style="width:70px; float:left;">평일</div>
-                            <div style="width:200px; float:left;">10:00 ~ 17:00</div>
-                        </div>
-                        <div>
-                            <div style="width:70px; float:left;">주말</div>
-                            <div style="width:200px; float:left;">10:00 ~ 17:00</div>
-                        </div>
-                        <div>
-                            <div style="width:70px; float:left;">공휴일</div>
-                            <div style="width:200px; float:left;">10:00 ~ 17:00</div>
-                        </div>
-                    </td>
-                </tr>
-            </table>
-            <hr>
-            <table style="height:80px">
-                <tr>
-                    <td style="width:200px; padding-left:2rem;"><i class="fas fa-phone"
-                            style="float:left; color:rgb(170, 170, 170)"></i>&nbsp;&nbsp;&nbsp;전화번호</td>
-                    <td>
-                        <div> 031-527-3277 </div>
-                        <div> 010-9459-3277 </div>
-                    </td>
-                </tr>
-            </table>
-            <hr>
-            <table style="height:80px">
-                <tr>
-                    <td style="width:200px; padding-left:2rem;"><i class="fas fa-info-circle"
-                            style="float:left; color:rgb(170, 170, 170)"></i>&nbsp;&nbsp;&nbsp;안내사항</td>
-                    <td>
-                        <div> 어쩌구 저쩌구 </div>
-                    </td>
-                </tr>
-            </table>
-            <hr>
         </div>
+    </section>
+
+    <!-- 예약문의-->
+    <section class="page-section" style="padding-top:5rem; padding-bottom:10rem;font-family : 'Noto Sans KR', sans-serif;">
+        <div class="container" style="font-weight : bold;">
+            <div style="font-size : 30px; margin-left:2rem ">예약문의</div>
+            <hr style="width:100%; height: 2px; border: 0 none; background-color: #fed136;">
+            
+            <table class="mytable">
+                <tr class="myth">
+                    <th style="width:10%">번호</th>
+                    <th style="width:70%">글제목</th>
+                    <th style="width:10%">글쓴이</th>
+                    <th style="width:10%">작성일</th>
+                </tr>
+                <tr class="mytr" style="background-color: #f8f8f8;">
+                    <td>공지</td>
+                    <td style="text-align: left; color:black"><a class="my_a" href="#">공지사항입니다</a></td>
+                    <td>hanjo8813</td>
+                    <td>2020-12-17</td>
+                </tr>
+                <tr class="mytr">
+                    <td>4</td>
+                    <td style="text-align: left; color:black"><a class="my_a" href="#">예약문의4</a></td>
+                    <td>ghis22130</td>
+                    <td>2020-12-17</td>
+                </tr>
+                <tr class="mytr">
+                    <td>3</td>
+                    <td style="text-align: left; color:black"><a class="my_a" href="#">예약문의3</a></td>
+                    <td>wgrey0103</td>
+                    <td>2020-12-17</td>
+                </tr>
+                <tr class="mytr">
+                    <td>2</td>
+                    <td style="text-align: left; color:black"><a class="my_a" href="#">예약문의2</a></td>
+                    <td>portriss</td>
+                    <td>2020-12-17</td>
+                </tr>
+                <tr class="mytr">
+                    <td>1</td>
+                    <td style="text-align: left; color:black"><a class="my_a" href="#">예약문의1</a></td>
+                    <td>jeonber2</td>
+                    <td>2020-12-17</td>
+                </tr>
+            </table>
+            <br><br><br>
+            
+            <div style="text-align: center;">
+                <button class="mybutton">&#60;</button>&nbsp;&nbsp;
+                <button class="mybutton">1</button>&nbsp;&nbsp; 
+                <button class="mybutton">&#62;</button>
+                <button class="mybutton2">글쓰기</button>
+            </div>
     </section>
 
     <!-- 끝-->
