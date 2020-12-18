@@ -3,6 +3,8 @@
 https://hanjo8813.netlify.app
 ### 프론트엔드 영역을 디자인하여 정적 사이트를 구현한 프로젝트입니다.
 
+<br>
+
 <img src="./assets/img/gh_main.png">
 
 ## 소개
